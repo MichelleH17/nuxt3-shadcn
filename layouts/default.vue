@@ -1,6 +1,8 @@
 <template>
   <div class="flex items-start">
-    <p>Sidebar</p>
-    <slot />
+    <Sidebar />
+    <div>
+      <slot />
+    </div>
   </div>
 </template>

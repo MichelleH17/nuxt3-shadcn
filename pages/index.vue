@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Button>Click me</Button>
+    <p>Main page</p>
   </div>
 </template>
 
