@@ -5,16 +5,19 @@ const loading = ref(false)
 <template>
   <div>
     <header>
-      This is my header
+      <p>Hi, welcome back Michaela!</p>
+      <h1>Dashboard</h1>
     </header>
     <main>
-      This is my main
+      <div>
+        Tabs: Today This week This month This year
+      </div>
       <section>
-        This is my section
+        Chart
       </section>
     </main>
     <footer>
-      This is my footer
+      I'll have 3 different cards
     </footer>
   </div>
 </template>
