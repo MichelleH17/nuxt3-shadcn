@@ -3,7 +3,7 @@ const loading = ref(false)
 </script>
 
 <template>
-  <div>
+  <div class="grid h-screen gap-8">
     <header>
       <p>Hi, welcome back Michaela!</p>
       <h1>Dashboard</h1>
