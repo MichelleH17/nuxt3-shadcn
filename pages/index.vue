@@ -5,16 +5,16 @@ const loading = ref(false)
 const list = [
   {
     title: "Today",
-    component: "<div>Today</div>"
+    component: defineAsyncComponent(() => import('@/components/Tabs/Today.vue'))
   }, {
     title: "Week",
-    component: "<div>Week</div>"
+    component: defineAsyncComponent(() => import('@/components/Tabs/Week.vue'))
   }, {
     title: "Month",
-    component: "<div>Month</div>"
+    component: defineAsyncComponent(() => import('@/components/Tabs/Month.vue'))
   }, {
     title: "Year",
-    component: "<div>Year</div>"
+    component: defineAsyncComponent(() => import('@/components/Tabs/Year.vue'))
   }
 ]
 </script>
@@ -36,7 +36,7 @@ const list = [
           </TabsTrigger>          
         </TabsList>
         <TabsContent v-for="(item, index) in list" :key="index" :value="item.title">
-          {{ item.component }}
+          <component :is="item.component" />
         </TabsContent>
       </Tabs>
       <!-- <div class="flex items-center gap-4">
